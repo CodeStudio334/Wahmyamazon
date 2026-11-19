@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar-sa" class="a-js a-rtl a-ember" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>طلباتك - Amazon.sa</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="a-ember">
+    <header id="navbar-main">
+        <div id="navbar">
+            <div id="nav-belt">
+                <div class="nav-right-group">
+                    <a href="index.html" id="nav-logo-sprites" class="nav-logo-link">
+                        <svg class="amz-official-logo-svg" viewBox="0 0 135 42" xmlns="http://www.w3.org/2000/svg">
+                            <text x="128" y="25" fill="#FFFFFF" font-family="'Amazon Ember', Arial, Helvetica, sans-serif" font-weight="700" font-size="25" letter-spacing="-0.8" text-anchor="start">amazon</text>
+                            <text x="34" y="25" fill="#FFFFFF" font-family="'Amazon Ember', Arial, Helvetica, sans-serif" font-weight="400" font-size="15" text-anchor="start">.sa</text>
+                            <path d="M 42 30 Q 78 41 116 29" stroke="#FF9900" stroke-width="2.7" fill="none" stroke-linecap="round"/>
+                            <path d="M 111 26.5 L 118.5 28.5 L 114.5 34.5" stroke="#FF9900" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div id="nav-tools">
+                    <a href="orders.html" id="nav-orders" class="nav-a nav-a-2">
+                        <span class="nav-line-1">الإرجاع</span>
+                        <span class="nav-line-2">و الطلبات</span>
+                    </a>
+                    <a href="cart.html" id="nav-cart" class="nav-a nav-a-2">
+                        <div id="nav-cart-count-container">
+                            <span id="nav-cart-count" class="nav-cart-count">0</span>
+                            <svg class="amz-official-cart-svg" viewBox="0 0 42 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M38 5H32.5L28.2 21.5C27.8 23 26.5 24 25 24H10.5C9 24 7.7 23 7.3 21.6L3.5 9.5H27.5" stroke="#FFFFFF" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="11.5" cy="30.5" r="2.8" fill="#FFFFFF"/>
+                                <circle cx="24.5" cy="30.5" r="2.8" fill="#FFFFFF"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="a-container pdp-container">
+        <div class="a-breadcrumb"><a href="index.html">حسابك</a> › <span>طلباتك</span></div>
+        <h1 class="a-size-extra-large" style="margin-bottom: 14px;">طلباتك</h1>
+        <div id="ordersListContainer"></div>
+    </main>
+
+    <script src="assets/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', renderOrdersPage);
+    </script>
+</body>
+</html>
